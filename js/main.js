@@ -86,3 +86,43 @@ function validaIdade(idade2) {
 idade3 = prompt("Desculpe, esqueci qual é a sua idade...")
 console.log(validaIdade(idade3));
 console.log(validar); // A variável global foi alterada pela função. Resultado é o mesmo do #return.
+
+function clicou() {
+    alert("Obrigado por clicar!");
+
+};
+
+function novoclique() {
+    document.getElementById("agradecimento").innerHTML = "<b>Obrigado por clicar novamente.</b>";
+};
+
+function redirecionar() {
+        window.open("http://www.uol.com.br");
+    //window.location.href = "http://www.uol.com.br";
+
+};
+
+//function trocar() {
+    //alert("Trocar texto");
+//    document.getElementById("mousemove").innerHTML = "Você passou o mouse aqui.";
+//};
+
+function trocar(elemento) {
+    elemento.innerHTML = "Você passou o mouse aqui.";
+};
+
+//function voltar() {
+//    document.getElementById("mousemove").innerHTML = "Passe o mouse aqui"
+//};
+
+function voltar(elemento) {
+    elemento.innerHTML = "Passe o mouse aqui.";
+};
+
+function carregar() {
+    alert("Pagina carregada");
+};
+
+function funcaochange(elemento) {
+    console.log(elemento.value);
+}
